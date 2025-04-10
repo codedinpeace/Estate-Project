@@ -75,7 +75,7 @@ const Navbar = () => {
 
 
       {/* // Mobile Navbar Layout */}
-      <div className='bg-white absolute overflow-hidden max-sm:w-full sm:w-full '>
+      <div className='bg-white absolute overflow-hidden max-sm:w-full sm:w-full z-30 '>
       <div className='flex '>
           <div className='Mobile-Nav mx-auto '>
             <ul className={`md:hidden flex flex-col p-10 font-md text-lg gap-4 text-center ${menu ? "flex" : "hidden"} transition delay-500 items-center`}>

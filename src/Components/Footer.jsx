@@ -38,7 +38,7 @@ const Footer = () => {
           <div className=' items-center mx-auto'>
             <img src={assets.logo_dark} alt="" className='py-4 px-3 w-50 items-center mx-auto  ' />
             <span className='flex justify-center'>
-            <p className='w-120 text-[] mt-3 text-center  '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorum at aperiam quis ipsam sunt omnis porro, fugit, eligendi aliquam cum commodi, adipisci exercitationem dolores!</p>
+            <p className='w-120 text-[] mt-3 text-center max-md:w-90'>Find your dream property with Estate. We specialize in luxury homes and investment opportunities, providing personalized service to meet your unique real estate needs.</p>
             </span>
             <div className="company">
               <ul className='flex items-center mx-auto justify-center mt-10 gap-4 pl-5'>
