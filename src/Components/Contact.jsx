@@ -59,20 +59,23 @@ const Contact = () => {
         </div>
 
         {/* Mobile */}
-        <div className='md:hidden mt-10'>
+        <div className='md:hidden mt-10 flex flex-col' >
             <form action="" onSubmit={onSubmit}>
             <input type="hidden" name="access_key" value="2db91cf1-1eaf-4a7d-889b-14d96b66d709"/>    
-            <div className='md:text-2xl  md:hidden max-sm:flex  sm:flex justify-center gap-5 max-sm:text-[14px] sm:text-[14px]'> 
-                <input name="name" type="text" placeholder='Enter name' className='border-1 border-black rounded  text-start  w-33 pl-3 h-8' required/>
-                <br />
-                <input type="email" placeholder='Enter email' name="email"  className='border-1 border-black rounded  text-start w-53  pl-3 h-8' required />
+            <div className='md:text-2xl  md:hidden max-sm:flex max-sm:flex-col sm:flex justify-center gap-5 max-sm:text-[12px] sm:text-[14px] '> 
+              <span className='flex justify-center gap-[10px]'>
+                <input name="name" type="text" placeholder='Enter name' className='  border-1 border-black rounded  text-start  w-33 pl-3 h-8' required/>
+                <input name="name" type="text" placeholder='Enter lastname' className='  border-1 border-black rounded  text-start  w-35 pl-3 h-8' required/>
+
+                </span>
+                <input type="email" placeholder='Enter email' name="email"  className='mx-auto border-1 border-black rounded  text-start w-71  pl-3 h-8' required />
                 
             </div>
             <span className='flex justify-center'>
-            <span className='mx-auto'>
-            <textarea name="message"  placeholder='Enter Message' className='border-1 border-black rounded mt-4 w-97 pl-3 h-30' required></textarea>
+            <span className=''>
+            <textarea name="message"  placeholder='Enter Message' className='border-1 border-black rounded mt-4 w-71 pl-3 h-30' required></textarea>
             <br />
-            <button type='submit' className=' hover:bg-white hover:border-black hover:text-black transition-all border-3 bg-blue-500 border-blue-500 text-white cursor-pointer shadow-md rounded py-1 px-1 text-[10px] '>{result ? result : "Send Message"}</button>
+            <button type='submit' className='hover:bg-white hover:border-black hover:text-black transition-all border-3 bg-blue-500 border-blue-500 text-white cursor-pointer shadow-md rounded py-1 px-1 text-[10px] '>{result ? result : "Send Message"}</button>
             </span>
             </span>
             </form>
